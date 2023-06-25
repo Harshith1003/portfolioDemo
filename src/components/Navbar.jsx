@@ -41,7 +41,7 @@ const Navbar = () => {
         {nav && (
       <ul className='sidebar' >
       {links.map(({id,link})=>(
-            <li key={id} className='li2'><Link to={link} smooth duration={500}>{link}</Link></li>
+            <li key={id} className='li2'><Link onClick={() => setNav(!nav)} to={link} smooth duration={500}>{link}</Link></li>
         ))}
       </ul>
     )}

@@ -2,6 +2,7 @@ import React from 'react'
 import '../stylesheets/home.css'
 import {FaArrowRight} from "react-icons/fa"
 import HeroImage from '../assests/hero11.jpg'
+import {Link} from "react-scroll";
 
 const Home = () => {
   return (
@@ -14,12 +15,12 @@ const Home = () => {
                 Currently, I love to work on the web application using technologies like React,Angular
             </p>
             <div className="sub3-home">
-                <button className="button1">
-                    Portfolio
+                <Link to="contact" smooth duration={500} className="button1">
+                    Contact Me
                     <span>
                         <FaArrowRight size={15} className='icon1'/> 
                     </span>
-                </button>
+                </Link>
             </div>
         </div>
         <div>
